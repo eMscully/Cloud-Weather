@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "michelle-mcewen-sCrqMG2f6qo-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "michelle-mcewen-sCrqMG2f6qo-unsplash@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "michelle-mcewen-sCrqMG2f6qo-unsplash@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
