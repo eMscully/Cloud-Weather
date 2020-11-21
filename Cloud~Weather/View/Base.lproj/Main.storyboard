@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pxg-05-eEn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="uUe-f8-99F">
+            <objects>
+                <viewController id="Pxg-05-eEn" customClass="RootViewController" customModule="Cloud_Weather" customModuleProvider="target" propertyAccessControl="all" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QGf-2X-ykX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ar5-p7-aa7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icloud" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Y8X-Pe-KTU">
+                                <rect key="frame" x="106" y="76" width="208" height="188"/>
+                                <color key="tintColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="191.5" id="tJK-J8-YC5"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search city" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EPW-eJ-RfD">
+                                <rect key="frame" x="37" y="439" width="272" height="34"/>
+                                <color key="backgroundColor" red="0.1222262606" green="0.096643082800000002" blue="0.29413610699999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT7-CO-42g">
+                                <rect key="frame" x="0.0" y="253" width="414" height="58"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="50"/>
+                                <color key="textColor" red="0.1222262606" green="0.096643082800000002" blue="0.29413610699999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search city:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxs-jk-ySr">
+                                <rect key="frame" x="37" y="394" width="272" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="iBp-Qm-riF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbN-Pf-6M7">
+                                <rect key="frame" x="323" y="431" width="77" height="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="cloud.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35"/>
+                                </state>
+                                <connections>
+                                    <action selector="goPressed:" destination="Pxg-05-eEn" eventType="touchUpInside" id="Wop-cR-MQX"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="goSegue" modalPresentationStyle="fullScreen" id="Iij-qx-NC7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dva-pb-iO6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ar5-p7-aa7" firstAttribute="trailing" secondItem="jT7-CO-42g" secondAttribute="trailing" id="1VP-ZF-Hlm"/>
+                            <constraint firstItem="ar5-p7-aa7" firstAttribute="centerX" secondItem="QGf-2X-ykX" secondAttribute="centerX" id="299-y4-Dla"/>
+                            <constraint firstItem="Y8X-Pe-KTU" firstAttribute="top" secondItem="Dva-pb-iO6" secondAttribute="top" constant="31" id="5mP-1x-79z"/>
+                            <constraint firstItem="oxs-jk-ySr" firstAttribute="leading" secondItem="EPW-eJ-RfD" secondAttribute="leading" id="AQx-tO-161"/>
+                            <constraint firstItem="Dva-pb-iO6" firstAttribute="trailing" secondItem="oxs-jk-ySr" secondAttribute="trailing" constant="105" id="AXF-7e-8Ze"/>
+                            <constraint firstItem="ar5-p7-aa7" firstAttribute="leading" secondItem="jT7-CO-42g" secondAttribute="leading" id="CNA-Rc-aVL"/>
+                            <constraint firstItem="oxs-jk-ySr" firstAttribute="trailing" secondItem="EPW-eJ-RfD" secondAttribute="trailing" id="DPc-6i-lq7"/>
+                            <constraint firstItem="ar5-p7-aa7" firstAttribute="top" secondItem="QGf-2X-ykX" secondAttribute="topMargin" constant="-44" id="Equ-4z-Ibc"/>
+                            <constraint firstItem="ar5-p7-aa7" firstAttribute="centerY" secondItem="QGf-2X-ykX" secondAttribute="centerY" id="LDo-r0-PcT"/>
+                            <constraint firstItem="jT7-CO-42g" firstAttribute="top" secondItem="Dva-pb-iO6" secondAttribute="top" constant="209" id="MuW-9W-jKs"/>
+                            <constraint firstItem="Y8X-Pe-KTU" firstAttribute="leading" secondItem="Dva-pb-iO6" secondAttribute="leading" constant="106" id="Qnh-5H-17x"/>
+                            <constraint firstItem="Dva-pb-iO6" firstAttribute="trailing" secondItem="Y8X-Pe-KTU" secondAttribute="trailing" constant="100" id="WdD-uI-6he"/>
+                            <constraint firstItem="Dva-pb-iO6" firstAttribute="bottom" secondItem="pbN-Pf-6M7" secondAttribute="bottom" constant="381" id="X5j-Ij-gSO"/>
+                            <constraint firstItem="jT7-CO-42g" firstAttribute="leading" secondItem="Dva-pb-iO6" secondAttribute="leading" id="Yni-pc-l8h"/>
+                            <constraint firstItem="EPW-eJ-RfD" firstAttribute="centerY" secondItem="pbN-Pf-6M7" secondAttribute="centerY" id="ZCq-FH-Sl1"/>
+                            <constraint firstItem="pbN-Pf-6M7" firstAttribute="leading" secondItem="EPW-eJ-RfD" secondAttribute="trailing" constant="14" id="ggQ-uE-dq4"/>
+                            <constraint firstItem="Dva-pb-iO6" firstAttribute="trailing" secondItem="pbN-Pf-6M7" secondAttribute="trailing" constant="14" id="kZ5-Qs-MNU"/>
+                            <constraint firstItem="Dva-pb-iO6" firstAttribute="bottom" secondItem="EPW-eJ-RfD" secondAttribute="bottom" constant="389" id="kdq-6Z-bRZ"/>
+                            <constraint firstItem="oxs-jk-ySr" firstAttribute="leading" secondItem="Dva-pb-iO6" secondAttribute="leading" constant="37" id="taS-xc-Prt"/>
+                            <constraint firstItem="EPW-eJ-RfD" firstAttribute="top" secondItem="oxs-jk-ySr" secondAttribute="bottom" constant="8" id="yap-TT-r7p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dZG-Ao-cDZ"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RD7-2L-st3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2023" y="-453"/>
+        </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="Cloud_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Storm" translatesAutoresizingMaskIntoConstraints="NO" id="04B-4m-Zg5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.moon.bolt" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oLb-iJ-ezm">
+                                <rect key="frame" x="237" y="133" width="158" height="171"/>
+                                <color key="tintColor" red="0.98624199628829956" green="0.7796865701675415" blue="0.0" alpha="0.75582655246884445" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157.5" id="YS5-Fh-JZW"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDF-Ob-lhb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem leftItemsSupplementBackButton="YES" id="pDJ-7D-aEn">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="NTz-mt-BnX">
+                                            <imageReference key="image" image="xmark.icloud" catalog="system" symbolScale="large"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="Pxg-05-eEn" kind="presentation" identifier="backToRootSegue" modalPresentationStyle="fullScreen" id="lDd-Ic-7bY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boulder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yz1-40-GU3">
+                                <rect key="frame" x="20" y="185" width="209" height="65"/>
+                                <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="50"/>
+                                <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32º F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioz-xG-B6H">
+                                <rect key="frame" x="34" y="258" width="206" height="110"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="52"/>
+                                <color key="textColor" red="0.78354805709999997" green="0.65108340980000001" blue="0.050296813250000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ioz-xG-B6H" firstAttribute="top" secondItem="Yz1-40-GU3" secondAttribute="bottom" constant="8" symbolic="YES" id="05Z-4a-JGf"/>
+                            <constraint firstItem="oLb-iJ-ezm" firstAttribute="top" secondItem="BDF-Ob-lhb" secondAttribute="bottom" constant="46" id="0bP-rS-oQV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ioz-xG-B6H" secondAttribute="bottom" constant="494" id="4ee-Zq-lh3"/>
+                            <constraint firstItem="BDF-Ob-lhb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="80N-8e-K3H"/>
+                            <constraint firstItem="BDF-Ob-lhb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Gs-oa-6oe"/>
+                            <constraint firstItem="oLb-iJ-ezm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="ALV-X6-5Kb"/>
+                            <constraint firstItem="04B-4m-Zg5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bxk-FP-dNr"/>
+                            <constraint firstItem="Yz1-40-GU3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="Gon-Mp-Xvj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oLb-iJ-ezm" secondAttribute="trailing" constant="19.5" id="KNT-j3-BPw"/>
+                            <constraint firstItem="Yz1-40-GU3" firstAttribute="centerY" secondItem="oLb-iJ-ezm" secondAttribute="centerY" id="Okg-GU-TtQ"/>
+                            <constraint firstItem="oLb-iJ-ezm" firstAttribute="leading" secondItem="Yz1-40-GU3" secondAttribute="trailing" constant="8" symbolic="YES" id="PSz-U5-AJl"/>
+                            <constraint firstAttribute="trailing" secondItem="04B-4m-Zg5" secondAttribute="trailing" id="PhU-Tc-L0N"/>
+                            <constraint firstItem="04B-4m-Zg5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Uhp-yp-Zmz"/>
+                            <constraint firstItem="Yz1-40-GU3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aMd-7C-RbM"/>
+                            <constraint firstItem="BDF-Ob-lhb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e07-zW-nKr"/>
+                            <constraint firstAttribute="bottom" secondItem="04B-4m-Zg5" secondAttribute="bottom" id="iT3-OL-pAT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ioz-xG-B6H" secondAttribute="trailing" constant="174" id="lHt-HE-8Dp"/>
+                            <constraint firstItem="Ioz-xG-B6H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="rs9-4N-Fwz"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1284.0579710144928" y="-471.42857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Storm" width="889" height="1333"/>
+        <image name="cloud.fill" catalog="system" width="128" height="84"/>
+        <image name="cloud.moon.bolt" catalog="system" width="125" height="128"/>
+        <image name="icloud" catalog="system" width="128" height="88"/>
+        <image name="xmark.icloud" catalog="system" width="128" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
