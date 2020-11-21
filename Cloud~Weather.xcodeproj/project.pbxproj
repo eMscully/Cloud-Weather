@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F07FBC52563610900D3BE26 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F07FBC42563610900D3BE26 /* RootViewController.swift */; };
+		5F359D002569B664001AA6F3 /* WeatherObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F359CFF2569B664001AA6F3 /* WeatherObject.swift */; };
 		5F361FE3256220B9000ADA43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F361FE2256220B9000ADA43 /* AppDelegate.swift */; };
 		5F361FE5256220B9000ADA43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F361FE4256220B9000ADA43 /* SceneDelegate.swift */; };
 		5F361FE7256220B9000ADA43 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F361FE6256220B9000ADA43 /* WeatherViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		5F07FBC42563610900D3BE26 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5F359CFF2569B664001AA6F3 /* WeatherObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherObject.swift; sourceTree = "<group>"; };
 		5F361FDF256220B9000ADA43 /* Cloud~Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cloud~Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F361FE2256220B9000ADA43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F361FE4256220B9000ADA43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				5FE050A825699E7300183B2B /* WeatherDataService.swift */,
 				5FE050B42569A37D00183B2B /* WeatherData.swift */,
+				5F359CFF2569B664001AA6F3 /* WeatherObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				5F361FE3256220B9000ADA43 /* AppDelegate.swift in Sources */,
 				5F07FBC52563610900D3BE26 /* RootViewController.swift in Sources */,
 				5FE050B52569A37D00183B2B /* WeatherData.swift in Sources */,
+				5F359D002569B664001AA6F3 /* WeatherObject.swift in Sources */,
 				5F361FE5256220B9000ADA43 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

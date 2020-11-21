@@ -11,9 +11,16 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var weatherBackgroundImage: UIImageView!
     
    
+    var city: String!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        cityLabel.text = city
+        
+
+        
     }
 
 
