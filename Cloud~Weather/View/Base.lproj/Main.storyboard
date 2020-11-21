@@ -91,6 +91,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="dZG-Ao-cDZ"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="EPW-eJ-RfD" id="HJN-Hx-ymh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RD7-2L-st3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,6 +169,12 @@
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="Yz1-40-GU3" id="7BE-rW-gCi"/>
+                        <outlet property="temperatureLabel" destination="Ioz-xG-B6H" id="8XN-oy-eAu"/>
+                        <outlet property="weatherBackgroundImage" destination="04B-4m-Zg5" id="4OR-Rn-l9g"/>
+                        <outlet property="weatherConditionSymbol" destination="oLb-iJ-ezm" id="0Vc-XT-9Id"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

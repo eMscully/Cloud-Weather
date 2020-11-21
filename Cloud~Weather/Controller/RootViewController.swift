@@ -1,15 +1,26 @@
 import UIKit
 
 class RootViewController: UIViewController {
+    
+    @IBOutlet weak var searchTextField: UITextField!
+   
+    let weatherService = WeatherService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationController?.navigationBar.isHidden = true 
+        navigationController?.navigationBar.isHidden = true
+        
+     
+       
+        
     }
     
 
     @IBAction func goPressed(_ sender: UIButton) {
+        if let city = searchTextField.text {
+            weatherService.getCurrentWeather(for: city)
+        }
         performSegue(withIdentifier: "goSegue", sender: self)
     }
     /*
@@ -24,7 +35,4 @@ class RootViewController: UIViewController {
 
 }
 
-/*
- API key: 061eff74fd9cd20dddec81325f8e0493
-base URL : http://api.weatherstack.com/
- */
+
