@@ -4,7 +4,7 @@ class RootViewController: UIViewController {
     
     @IBOutlet weak var searchTextField: UITextField!
    
-    let weatherService = WeatherService()
+    let weatherService = WeatherDataService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
